@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: consumer
+  datasource:
+    url: jdbc:mysql://localhost:3310/microservice_db
+    username: admin
+    password: 12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true # show the commands that are being executed
+    # generate-ddl : true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+
+
