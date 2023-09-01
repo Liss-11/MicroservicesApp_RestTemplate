@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 management:
   tracing:
@@ -8,9 +8,9 @@ management:
 
 spring:
   application:
-    name: consumer
+    name: fraud
   datasource:
-    url: jdbc:mysql://localhost:3310/microservice_db
+    url: jdbc:mysql://localhost:3311/fraud_db
     username: admin
     password: 12345
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,6 +20,3 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQLDialect
-
-
-
